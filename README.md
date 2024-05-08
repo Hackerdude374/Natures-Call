@@ -4,7 +4,7 @@
 
 
 
-Embark on a revolutionary bathroom-finding experience with Nature's Call, a robust web application that transforms every call of nature into a pleasant journey.
+
 
 ## 🛠 Technologies Used
 
