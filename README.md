@@ -27,8 +27,11 @@
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
 - **Directions/ETA, and Bathroom Markers**: Implemented with React's Google package.
 - **Bathroom ratings calculated from review ratings**: World-class rating calculations that automatically updates based on reviews.
+I created a new 5 star review for the initial unrated bathroom, Jorge's Bathroom.
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/940c2fbe-c23b-4ed0-adda-369f49f4b73f)
+It is initially 5 stars since the first review was 5 stars.
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/c8104fa9-ffa5-4a79-b252-355b72ed859f)
+it sucked so I added a second review, this time being 1 star, dropping this bathroom rating of a 5 to a 4.
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/fd6e87d2-8844-49c9-b64c-751a34244f08)
 
 
