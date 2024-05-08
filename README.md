@@ -2,10 +2,6 @@
 ![Optional description of the image](server-side/client/src/images/DarkModeLogo.png)
 ![Optional description of the image](server-side/client/src/images/Demo.gif)
 
-
-
-
-
 ## 🛠 Technologies Used
 
 - **PostgreSQL**: Our reliable relational database, ensuring efficient data storage and retrieval.
@@ -17,12 +13,10 @@
   
 ## ✨ Features & Achievements
 
-- **Team Collaboration**: Orchestrated seamless collaboration with a talented team of 3, collectively brainstorming, designing, and implementing features.
 - **Google Places API Integration**: Integrated the powerful Google Places API to showcase nearby bathroom locations based on users' input addresses.
 - **Comprehensive Bathroom Details**: Delivered a holistic view for users, offering in-depth information on amenities, reviews, ratings, and more.
 - **User Authentication**: Implemented a robust authentication system leveraging bcrypt for secure password hashing and cookies for sessions, enabling users to create accounts and sign in securely.
-- **Agile Software Development**: Navigated the development journey with agile methodology life cycles, ensuring consistent progress through daily standups and GitHub sprint board sprints.
-- **Presentation to Employers**: Successfully presented Nature's Call to potential employers, including Spotify and CUNY Tech Incubator.
+- **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
 
 ## 🗓 Project Timeline
 
