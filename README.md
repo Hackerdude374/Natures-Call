@@ -64,3 +64,22 @@
     ```bash
     npm start
     ```
+
+6. Setting up the Frontend:
+    - Navigate to the frontend directory:
+        ```bash
+        cd Natures-call/server-side/client
+        ```
+    - Install all required packages:
+        ```bash
+        npm i --force
+        ```
+    - Start the website:
+        ```bash
+        npm run dev
+        ```
+
+7. Create a .env file in this format (NOTE: Please contact us for a Google Maps/Places API key, or you can purchase one yourself):
+    ```plaintext
+    VITE_GOOGLE_MAPS_API_KEY=
+    ```
