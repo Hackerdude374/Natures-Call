@@ -1,6 +1,8 @@
 # Nature's Call 🍃
 ![Optional description of the image](server-side/client/src/images/DarkModeLogo.png)
+📹 Dive into the [demo video](https://streamable.com/nmahe1) to witness the magic of Nature's Call!
 ![Optional description of the image](server-side/client/src/images/Demo.gif)
+
 
 
 ## 🛠 Technologies Used
