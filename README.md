@@ -83,3 +83,15 @@
     ```plaintext
     VITE_GOOGLE_MAPS_API_KEY=
     ```
+
+## 📝 IMPORTANT DEVELOPER NOTE
+
+- The "main" branch is not our latest changes. Our "presbackup" branch is our latest code, but the main branch had issues with deployment and other obstacles.
+- If you would like to see our latest changes, follow the above steps, but checkout the "presbackup" branch.
+- For frontend setup, use `cd Natures-Call/frontend/NaturesCall` and `npm run dev`.
+- For backend setup, use `cd Natures-Call/server-side` and `npm start`.
+- Enjoy!
+
+## Cool Code Snippets/Explanations 
+
+In our server.js
