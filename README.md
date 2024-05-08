@@ -58,8 +58,9 @@
         npm i --force
         ```
     - Create an .ENV file to connect to the database:
+    - NOTE: Please contact us to authenticate you and provide you the details for the fields in this file.
         ```plaintext
-        # Please contact us to authenticate you and provide you the details for the fields.
+ 
         DB_USER=
         DB_HOST=
         DB_NAME=
