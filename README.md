@@ -1,6 +1,5 @@
 # Nature's Call, a NYC Bathroom Locator App
-<!-- ![Optional description of the image](server-side/client/src/images/DarkModeLogo.png) -->
-https://github.com/khadijahakter/natures-call/blob/main/server-side/client/src/images/DarkModeLogo.png?raw=true
+[Optional description of the image](server-side/client/src/images/DarkModeLogo.png)
 ![Optional description of the image](server-side/client/src/images/Demo.gif)
 📹 Demo video [demo video](https://streamable.com/nmahe1) 
 
