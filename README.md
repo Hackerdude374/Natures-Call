@@ -125,8 +125,9 @@ const getAllBathrooms = async () => {
 
     // Rest of the code...
 };
-
-// Upserting our custom bathroom data fields within this third-party bathroom data:
+```
+Upserting our custom bathroom data fields within this third-party bathroom data:
+ ```javascript
 try {
   const [newBathroom, created] = await Bathroom.upsert({
     // Bathroom data fields...
@@ -137,8 +138,11 @@ try {
 } catch (error) {
   // Error handling...
 }
+```
 
-// Scheduling it with cron for periodic updates:
+Scheduling it with cron for periodic updates:
+```javascript
 cron.schedule('0 0 1,15 * *', () => {
   getAllBathrooms();
 });
+```
