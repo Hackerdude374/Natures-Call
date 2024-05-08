@@ -11,6 +11,8 @@
 ## ✨ Features & Achievements
 
 - **Nearby Bathrooms Based on User's Location**: Integrated the powerful Google Places API to showcase nearby bathroom locations based on the user's device location (with permissions).
+![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/43a7ab37-b07c-450a-b341-6607f15fa998)
+
 - **Comprehensive Bathroom Details**: Delivered a holistic view for users, offering filtering by amenities and star ratings and reviews.
 - **Profile Page for Funsies**: Look at your created bathrooms and reviews! Also change your pfp!
 - **User Authentication**: Implemented a robust authentication system leveraging bcrypt for secure password hashing and cookies for sessions, enabling users to create accounts and sign in securely.
