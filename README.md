@@ -34,11 +34,40 @@
     git checkout main
     ```
 
-3. Ensure you are on the correct branch:
+3. Ensure you are on the correct branch: (it should output main)
     ```bash
     git branch
     ```
 
-
+4. Setting up the Backend:
+    - Navigate to the server-side directory:
+        ```bash
+        cd Natures-Call/server-side
+        ```
+    - Install all required packages:
+        ```bash
+        npm i --force
+        ```
+    4. Setting up the Backend:
+    - Navigate to the server-side directory:
+        ```bash
+        cd Natures-Call/server-side
+        ```
+    - Install all required packages:
+        ```bash
+        npm i --force
+        ```
+    - Create an .ENV file to connect to the database:
+        ```plaintext
+        # Please contact us to authenticate you and provide you the details for the fields.
+        DB_USER=
+        DB_HOST=
+        DB_NAME=
+        DB_PASSWORD=
+        DB_PORT=
+        SESSION_SECRET=
+        API_KEY=
+        ```
+    
 ## Code Snippets/Explanations
 
