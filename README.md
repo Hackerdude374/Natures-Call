@@ -14,6 +14,7 @@
 - **Comprehensive Bathroom Details**: Delivered a holistic view for users, offering in-depth information on amenities, reviews, ratings, and more.
 - **User Authentication**: Implemented a robust authentication system leveraging bcrypt for secure password hashing and cookies for sessions, enabling users to create accounts and sign in securely.
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
+- **Lightning Fast Builds**: With Vite.js.
 
 ## 🗓 Project Timeline
 
