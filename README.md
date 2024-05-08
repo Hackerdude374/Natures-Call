@@ -1,5 +1,5 @@
 # Nature's Call, a NYC Bathroom Locator App
-![Optional description of the image](server-side/client/src/images/DarkModeLogo.png){:height="100px" width="100px"}
+![Optional description of the image](server-side/client/src/images/DarkModeLogo.png){:height="50px" width="50px"}
 
 ![Optional description of the image](server-side/client/src/images/Demo.gif)
 📹 Demo video [demo video](https://streamable.com/nmahe1) 
