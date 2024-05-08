@@ -4,13 +4,11 @@
 
 ## 🛠 Technologies Used
 
-- **PostgreSQL**: ![PostgreSQL Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/45px-Postgresql_elephant.svg.png) Our reliable relational database, ensuring efficient data storage and retrieval.
-- **React + Vite**: ![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/45px-React-icon.svg.png) ![Vite Logo](https://vitejs.dev/logo.svg) The dynamic duo shaping our frontend, delivering a responsive and seamless user interface.
-- **Node.js & Express**: ![Node.js Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/45px-Node.js_logo.svg.png) ![Express Logo](https://expressjs.com/images/express-facebook-share.png) The backbone of our backend, providing robust routing, middleware support, and more.
-- **Cron Job**: No specific logo, but you can use an icon representing time or scheduling tasks. A strategic player for scheduled tasks, optimizing our app's functionality.
-- **JavaScript**: ![JavaScript Logo](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg) The language that breathes life into our project.
-- **Sequelize**: ![Sequelize Logo](https://sequelize.org/master/manual/asset/logo-small.png) A promise-based Node.js ORM, simplifying interactions with Postgres and enhancing database management.
+- **PostgreSQL**: ![PostgreSQL Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/45px-Postgresql_elephant.svg.png) 
+- **React + Vite**: ![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/45px-React-icon.svg.png) ![Vite Logo](https://vitejs.dev/logo.svg) 
+- **Node.js & Express**: ![Node.js Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/45px-Node.js_logo.svg.png) ![Express Logo](https://expressjs.com/images/express-facebook-share.png) 
 
+- **JavaScript**: ![JavaScript Logo](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg)
 
 
   
