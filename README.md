@@ -22,11 +22,22 @@
 
 ## 🔧 Getting Started
 
-📹 Dive into the [demo video](https://streamable.com/nmahe1) to witness the magic of Nature's Call!
+1. First, clone the repository by running the following commands:
+    ```bash
+    git init
+    git clone https://github.com/Hackerdude374/Natures-Call.git
+    ```
 
-## 🚀 Future Plans
- 
-- **Mobile Optimization**: Evolving towards mobile-friendliness for enhanced accessibility.
-- **Times of Operation Feature**: Introducing a feature to display times of operation for listed bathrooms.
+2. Navigate to the main branch:
+    ```bash
+    git checkout main
+    ```
 
-Join us on this transformative journey with Nature's Call! 💼✨
+3. Ensure you are on the correct branch:
+    ```bash
+    git branch
+    ```
+
+
+## Code Snippets/Explanations
+
