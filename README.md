@@ -69,6 +69,9 @@
         SESSION_SECRET=
         API_KEY=
         ```
-    
+    5. After that, simply run this to start the backend 
+   ```bash
+   npm start
+   ```
 ## Code Snippets/Explanations
 
