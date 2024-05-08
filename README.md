@@ -11,34 +11,30 @@
 ## ✨ Features & Achievements
 
 - **Nearby Bathrooms Based on User's Location**: Integrated the powerful Google Places API to showcase nearby bathroom locations based on the user's device location (with permissions).
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/43a7ab37-b07c-450a-b341-6607f15fa998)
-
+  ![Nearby Bathrooms](https://github.com/Hackerdude374/Natures-Call/assets/136039952/43a7ab37-b07c-450a-b341-6607f15fa998)
 
 - **Comprehensive Bathroom Details**: Delivered a holistic view for users, offering filtering by amenities and star ratings and reviews.
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/0ac6e234-fbfb-4fad-8a98-434943164e81)
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/23e234c1-6e95-4898-91c3-3756443c6036)
-
-
-
-
-
+  ![Bathroom Details 1](https://github.com/Hackerdude374/Natures-Call/assets/136039952/0ac6e234-fbfb-4fad-8a98-434943164e81)
+  ![Bathroom Details 2](https://github.com/Hackerdude374/Natures-Call/assets/136039952/23e234c1-6e95-4898-91c3-3756443c6036)
 
 - **Profile Page for Funsies**: Look at your created bathrooms and reviews! Also change your pfp!
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/bffaab67-173c-40f0-a8df-19ac6e93973e)
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/ef78037c-6d25-4e3c-a60d-88d2fd7db09d)
+  ![Profile Page 1](https://github.com/Hackerdude374/Natures-Call/assets/136039952/bffaab67-173c-40f0-a8df-19ac6e93973e)
+  ![Profile Page 2](https://github.com/Hackerdude374/Natures-Call/assets/136039952/ef78037c-6d25-4e3c-a60d-88d2fd7db09d)
 
 - **User Authentication**: Implemented a robust authentication system leveraging bcrypt for secure password hashing and cookies for sessions, enabling users to create accounts and sign in securely.
+
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
+
 - **Directions/ETA, and Bathroom Markers**: Implemented with React's Google package.
+
 - **Bathroom ratings calculated from review ratings**: World-class rating calculations that automatically updates based on reviews.
 
-I created a new 5 star review for the initial unrated bathroom, Jorge's Bathroom.
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/940c2fbe-c23b-4ed0-adda-369f49f4b73f)
-It is initially 5 stars since the first review was 5 stars.
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/c8104fa9-ffa5-4a79-b252-355b72ed859f)
-it sucked so I added a second review, this time being 1 star, dropping this bathroom rating of a 5 to a 4.
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/fd6e87d2-8844-49c9-b64c-751a34244f08)
-
+  - Created a new 5 star review for the initial unrated bathroom, Jorge's Bathroom.
+    ![Jorge's Bathroom Review 1](https://github.com/Hackerdude374/Natures-Call/assets/136039952/940c2fbe-c23b-4ed0-adda-369f49f4b73f)
+    It is initially 5 stars since the first review was 5 stars.
+    ![Jorge's Bathroom Review 2](https://github.com/Hackerdude374/Natures-Call/assets/136039952/c8104fa9-ffa5-4a79-b252-355b72ed859f)
+    It sucked so I added a second review, this time being 1 star, dropping this bathroom rating of a 5 to a 4.
+    ![Jorge's Bathroom Review 3](https://github.com/Hackerdude374/Natures-Call/assets/136039952/fd6e87d2-8844-49c9-b64c-751a34244f08)
 
 
 ## 🔧 Getting Started
