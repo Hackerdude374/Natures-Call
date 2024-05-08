@@ -60,12 +60,12 @@
             API_KEY=
             ```
 
-5. After that, simply run this to start the backend:
+5. After that, simply run this to start the backend express server:
     ```bash
     npm start
     ```
 
-6. Setting up the Frontend:
+6. Now you should be done with backend, Lets set up the Frontend:
     - Navigate to the frontend directory:
         ```bash
         cd Natures-call/server-side/client
