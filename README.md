@@ -16,6 +16,7 @@
 - **User Authentication**: Implemented a robust authentication system leveraging bcrypt for secure password hashing and cookies for sessions, enabling users to create accounts and sign in securely.
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
 - **Directions/ETA, and Bathroom Markers**: Implemented with React's Google package.
+- **Bathroom ratings calculated from review ratings**: World-class rating calculations that automatically updates based on reviews.
 
 
 ## 🔧 Getting Started
