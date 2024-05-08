@@ -16,9 +16,6 @@
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
 - **Lightning Fast Builds**: With Vite.js.
 
-## 🗓 Project Timeline
-
-**July 2023 - Present**: Crafting the future of bathroom location technology with Nature's Call.
 
 ## 🔧 Getting Started
 
