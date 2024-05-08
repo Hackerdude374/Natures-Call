@@ -15,6 +15,10 @@
 
 - **Comprehensive Bathroom Details**: Delivered a holistic view for users, offering filtering by amenities and star ratings and reviews.
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/0ac6e234-fbfb-4fad-8a98-434943164e81)
+![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/23e234c1-6e95-4898-91c3-3756443c6036)
+
+
+
 
 
 
@@ -23,6 +27,10 @@
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
 - **Directions/ETA, and Bathroom Markers**: Implemented with React's Google package.
 - **Bathroom ratings calculated from review ratings**: World-class rating calculations that automatically updates based on reviews.
+![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/940c2fbe-c23b-4ed0-adda-369f49f4b73f)
+![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/c8104fa9-ffa5-4a79-b252-355b72ed859f)
+![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/fd6e87d2-8844-49c9-b64c-751a34244f08)
+
 
 
 ## 🔧 Getting Started
