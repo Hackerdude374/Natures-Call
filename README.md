@@ -92,6 +92,53 @@
 - For backend setup, use `cd Natures-Call/server-side` and `npm start`.
 - Enjoy!
 
-## Cool Code Snippets/Explanations 
+## Cool Code Snippets/Explanations
 
-In our server.js
+### Periodically Updating Bathrooms with Cron Job
+
+#### In server.js:
+
+```javascript
+// Our function to get bathrooms from external APIs.
+const getAllBathrooms = async () => {
+  let page = 1;
+  const perPage = 10;
+
+  while (true) {
+    const options = {
+      method: 'GET',
+      url: 'https://public-bathrooms.p.rapidapi.com/location',
+      params: {
+        lat: '40.730610',
+        lng: '-73.935242',
+        page: page.toString(),
+        per_page: perPage.toString(),
+        offset: '0',
+        ada: 'false',
+        unisex: 'false'
+      },
+      headers: {
+        'X-RapidAPI-Key': process.env.API_KEY, // The RapidAPI key we used (our third party bathroom data)
+        'X-RapidAPI-Host': 'public-bathrooms.p.rapidapi.com'
+      }
+    };
+
+    // Rest of the code...
+};
+
+// Upserting our custom bathroom data fields within this third-party bathroom data:
+try {
+  const [newBathroom, created] = await Bathroom.upsert({
+    // Bathroom data fields...
+  }, {
+    returning: true,
+    conflictFields: ["sourceid"]
+  });
+} catch (error) {
+  // Error handling...
+}
+
+// Scheduling it with cron for periodic updates:
+cron.schedule('0 0 1,15 * *', () => {
+  getAllBathrooms();
+});
