@@ -4,9 +4,6 @@
 
 ## 🛠 Technologies Used
 
-## 🛠 Technologies Used
-
-## 🛠 Technologies Used
 
 - **PostgreSQL**: ![PostgreSQL Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/45px-Postgresql_elephant.svg.png) ![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/45px-React-icon.svg.png) ![Vite Logo](https://vitejs.dev/logo.svg) ![Node.js Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/45px-Node.js_logo.svg.png) ![Express Logo](https://expressjs.com/images/express-facebook-share.png) ![JavaScript Logo](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg) ![Sequelize Logo](https://sequelize.org/master/manual/asset/logo-small.png)
 
