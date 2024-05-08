@@ -39,15 +39,7 @@
     git branch
     ```
 
-4. Setting up the Backend:
-    - Navigate to the server-side directory:
-        ```bash
-        cd Natures-Call/server-side
-        ```
-    - Install all required packages:
-        ```bash
-        npm i --force
-        ```
+
     4. Setting up the Backend:
     - Navigate to the server-side directory:
         ```bash
@@ -72,6 +64,6 @@
     5. After that, simply run this to start the backend 
    ```bash
    npm start
-   ```
+  ```
 ## Code Snippets/Explanations
 
