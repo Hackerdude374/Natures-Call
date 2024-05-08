@@ -34,13 +34,12 @@
     git checkout main
     ```
 
-3. Ensure you are on the correct branch: (it should output main)
+3. Ensure you are on the correct branch (it should output main):
     ```bash
     git branch
     ```
 
-
-    4. Setting up the Backend:
+4. Setting up the Backend:
     - Navigate to the server-side directory:
         ```bash
         cd Natures-Call/server-side
@@ -50,20 +49,18 @@
         npm i --force
         ```
     - Create an .ENV file to connect to the database:
-    - NOTE: Please contact us to authenticate you and provide you the details for the fields in this file.
-        ```plaintext
- 
-        DB_USER=
-        DB_HOST=
-        DB_NAME=
-        DB_PASSWORD=
-        DB_PORT=
-        SESSION_SECRET=
-        API_KEY=
-        ```
-    5. After that, simply run this to start the backend 
-   ```bash
-   npm start
-  ```
-## Code Snippets/Explanations
+        - NOTE: Please contact us to authenticate you and provide you the details for the fields in this file.
+            ```plaintext
+            DB_USER=
+            DB_HOST=
+            DB_NAME=
+            DB_PASSWORD=
+            DB_PORT=
+            SESSION_SECRET=
+            API_KEY=
+            ```
 
+5. After that, simply run this to start the backend:
+    ```bash
+    npm start
+    ```
