@@ -17,7 +17,6 @@
 - **Comprehensive Bathroom Details**: Delivered a holistic view for users, offering filtering by amenities and star ratings and reviews.
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/0ac6e234-fbfb-4fad-8a98-434943164e81)
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/23e234c1-6e95-4898-91c3-3756443c6036)
-![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/ef78037c-6d25-4e3c-a60d-88d2fd7db09d)
 
 
 
@@ -26,6 +25,7 @@
 
 - **Profile Page for Funsies**: Look at your created bathrooms and reviews! Also change your pfp!
 ![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/bffaab67-173c-40f0-a8df-19ac6e93973e)
+![image](https://github.com/Hackerdude374/Natures-Call/assets/136039952/ef78037c-6d25-4e3c-a60d-88d2fd7db09d)
 
 - **User Authentication**: Implemented a robust authentication system leveraging bcrypt for secure password hashing and cookies for sessions, enabling users to create accounts and sign in securely.
 - **Periodic Bathroom Updating**: Implemented Express.js's CronJob Feature for routinely bathroom updating.
