@@ -1,6 +1,6 @@
-
-<div align = "center">
   # Nature's Call, a NYC Bathroom Locator App
+<div align = "center">
+
 <img src="server-side/client/src/images/DarkModeLogo.png" alt="Optional description of the image" width="100" height="100">
 
 ![Optional description of the image](server-side/client/src/images/Demo.gif)
