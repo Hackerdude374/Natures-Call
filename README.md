@@ -4,7 +4,7 @@
  
 <img src="server-side/client/src/images/DarkModeLogo.png" alt="Optional description of the image" width="100" height="100">
 ![Optional description of the image](server-side/client/src/images/Demo.gif)
-📹 [Demo video](https://streamable.com/nmahe1)
+📹 Demo video [demo video](https://streamable.com/nmahe1)
 
 
 ## 🛠 Technologies Used
