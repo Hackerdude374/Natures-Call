@@ -19,17 +19,17 @@ const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
 export async function loader({ params }) {
   console.log({ params });
-  const response = await fetch(`http://${API_URL}/bathrooms/${params.id}`);
+  const response = await fetch(`${API_URL}/bathrooms/${params.id}`);
   console.log("bathroom page URL");
   const Bathroom = await response.json();
   console.log("bathroom page URL");
-  const reviewsResponse = await fetch(`http://${API_URL}/bathrooms/${params.id}/reviews`);
+  const reviewsResponse = await fetch(`${API_URL}/bathrooms/${params.id}/reviews`);
   const Reviews = await reviewsResponse.json();
 
-  const UserResponse = await fetch(`http://${API_URL}/api/userProfileData/userData`);
+  const UserResponse = await fetch(`${API_URL}/api/userProfileData/userData`);
   const userData = await UserResponse.json();
 
-  const allUserResponse = await fetch(`http://${API_URL}/api/userProfileData/allUsers`);
+  const allUserResponse = await fetch(`${API_URL}/api/userProfileData/allUsers`);
   const allUsers = await allUserResponse.json();
   console.log("allUsers fetched: ", allUsers);
 
