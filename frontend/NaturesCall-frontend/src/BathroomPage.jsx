@@ -25,10 +25,10 @@ export async function loader({ params }) {
   const reviewsResponse = await fetch(`http://${API_URL}/bathrooms/${params.id}/reviews`);
   const Reviews = await reviewsResponse.json();
 
-  const UserResponse = await fetch(`${API_URL}/api/userProfileData/userData`);
+  const UserResponse = await fetch(`http://${API_URL}/api/userProfileData/userData`);
   const userData = await UserResponse.json();
 
-  const allUserResponse = await fetch(`${API_URL}/api/userProfileData/allUsers`);
+  const allUserResponse = await fetch(`http://${API_URL}/api/userProfileData/allUsers`);
   const allUsers = await allUserResponse.json();
   console.log("allUsers fetched: ", allUsers);
 
