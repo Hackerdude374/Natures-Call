@@ -185,6 +185,7 @@ app.post("/logins", async (req, res) => {
       .json({ message: "An error occurred during the login process" });
   }
 });
+
 //signUp
 app.post("/signups", async (req, res) => {
   const hashedPass = await bcrypt.hash(req.body.password, 10);
