@@ -20,8 +20,9 @@ const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
 export async function loader({ params }) {
   console.log({ params });
   const response = await fetch(`http://${API_URL}/bathrooms/${params.id}`);
+  console.log("bathroom page URL");
   const Bathroom = await response.json();
-
+  console.log("bathroom page URL");
   const reviewsResponse = await fetch(`http://${API_URL}/bathrooms/${params.id}/reviews`);
   const Reviews = await reviewsResponse.json();
 
