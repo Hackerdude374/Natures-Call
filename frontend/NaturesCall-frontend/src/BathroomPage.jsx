@@ -26,7 +26,7 @@ export async function loader({ params }) {
 
   // const Reviews = await reviewsResponse.json();
 
-  const reviewsResponse = await fetch(`${API_URL}/api/bathroomActions/bathrooms/${params.id}/reviews`);
+  const reviewsResponse = await fetch(`/api/bathroomActions/bathrooms/${params.id}/reviews`);
   const Reviews = await reviewsResponse.json();
 
   const UserResponse = await fetch(`/api/userProfileData/userData`);
