@@ -15,20 +15,20 @@ const authRouter = require("./routes/auth");
 const ProfileRouter = require("./routes/userProfileData");
 const UserActionRouter = require("./routes/userActions");
 const BathroomActionRouter = require("./routes/bathroomActions");
-// app.use(
-//   cors({
-//     origin: "http://localhost:5173",
-//     allowedHeaders: ["Content-Type", "Authorization"],
-//     methods: ["GET", "POST", "PATCH", "DELETE"],
-//   })
-// );
 app.use(
   cors({
-    origin: "http://ec2-3-19-215-1.us-east-2.compute.amazonaws.com",
+    origin: "http://localhost:5173",
     allowedHeaders: ["Content-Type", "Authorization"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
   })
 );
+// app.use(
+//   cors({
+//     origin: "http://ec2-3-19-215-1.us-east-2.compute.amazonaws.com",
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//     methods: ["GET", "POST", "PATCH", "DELETE"],
+//   })
+// );
 
 
 // --- fetching from api ---
