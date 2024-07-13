@@ -1,56 +1,43 @@
-import React, { useState,useEffect } from "react";
-import { Link,NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
-import { Outlet } from "react-router-dom";
-
-
-
-
-//change name to bathroom list
 function Home() {
-   
-  const [displayBathrooms,setDisplayBathrooms]=useState([]);
-  useEffect(()=>{
-
-    async function fetchBathrooms(){
-      
-    const response= await fetch("http://localhost:4000/bathrooms");
-    
-    const displayBathrooms =await response.json();
-    setDisplayBathrooms(displayBathrooms);
-     
-    return {displayBathrooms};
-    
-    }
-    
-    fetchBathrooms();
-    
-    },[])
+  const [displayBathrooms, setDisplayBathrooms] = useState([]);
   
- 
+  // Use an environment variable, with a fallback to localhost for development
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+
+  useEffect(() => {
+    async function fetchBathrooms() {
+      try {
+        const response = await fetch(`${API_URL}/bathrooms`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const bathrooms = await response.json();
+        setDisplayBathrooms(bathrooms);
+      } catch (error) {
+        console.error("Error fetching bathrooms:", error);
+      }
+    }
+
+    fetchBathrooms();
+  }, []);
+
   return (
     <>
-    
-    <ul className='ml-10'>
-
+      <ul className='ml-10'>
         {displayBathrooms.map(bathroom => (
-
-        <li >
-            <h3 >{bathroom.name}</h3>            
+          <li key={bathroom.id}>
+            <h3>{bathroom.name}</h3>
             <p><strong>rating: </strong>{bathroom.rating}</p>
             <p><strong>Address: </strong> {bathroom.address}</p>
-        </li>
-        
+          </li>
         ))}
-        
-    </ul>
-
-   <Outlet/> 
-
+      </ul>
+      <Outlet />
     </>
   );
-  
 }
 
 export default Home;
-
