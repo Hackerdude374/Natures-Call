@@ -1,0 +1,4 @@
+EC2 Instance: Hosts both frontend and backend.
+RDS Instance: Hosts PostgreSQL database.
+Route 53: Manages your domain and routes traffic to your EC2 instance.
+Environment Variables: Ensure secure database connections.
