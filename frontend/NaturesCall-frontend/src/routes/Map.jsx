@@ -7,7 +7,7 @@ import './MapStyles.css';
 import StarRating from "./StarRating"; 
 import {TbLocation} from 'react-icons/tb'
 // import customMarkerIcon from "./images/bathroomMarker(unclicked).png"; 
-
+console.log('Google Maps API Key:', import.meta.env.VITE_GOOGLE_MAPS_API_KEY);
 const center = {
   lat: 40.7128,
   lng: 74.0060
