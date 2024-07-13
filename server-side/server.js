@@ -15,7 +15,7 @@ const authRouter = require("./routes/auth");
 const ProfileRouter = require("./routes/userProfileData");
 const UserActionRouter = require("./routes/userActions");
 const BathroomActionRouter = require("./routes/bathroomActions");
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+//const API_BASE_URL = import.meta.env.VITE_API_URL;
 // app.use(
 //   cors({
 //     origin: "http://localhost:5173",
