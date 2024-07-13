@@ -14,25 +14,27 @@ import { HiUserGroup } from 'react-icons/hi';
 import { BsFillTrash3Fill } from "react-icons/bs";
 
 
-//loader for single bathroom element
-//loader for reviews for a specific bathroom
+// Use environment variable for API URL
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+
 export async function loader({ params }) {
   console.log({ params });
-  const response = await fetch(`http://localhost:4000/bathrooms/${params.id}`);
-
+  const response = await fetch(`${API_URL}/bathrooms/${params.id}`);
   const Bathroom = await response.json();
 
-  const reviewsResponse = await fetch(`http://localhost:4000/bathrooms/${params.id}/reviews`);
-
+  const reviewsResponse = await fetch(`${API_URL}/bathrooms/${params.id}/reviews`);
   const Reviews = await reviewsResponse.json();
-  const UserResponse = await fetch(`/api/userProfileData/userData`);
+
+  const UserResponse = await fetch(`${API_URL}/api/userProfileData/userData`);
   const userData = await UserResponse.json();
-  const allUserResponse = await fetch('/api/userProfileData/allUsers');
+
+  const allUserResponse = await fetch(`${API_URL}/api/userProfileData/allUsers`);
   const allUsers = await allUserResponse.json();
   console.log("allUsers fetched: ", allUsers);
-  return { Bathroom, Reviews, userData, allUsers };
 
+  return { Bathroom, Reviews, userData, allUsers };
 }
+
 
 //action for add a review 
 
