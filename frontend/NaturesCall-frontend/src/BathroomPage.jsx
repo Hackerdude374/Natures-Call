@@ -22,9 +22,13 @@ export async function loader({ params }) {
 
   const Bathroom = await response.json();
 
-  const reviewsResponse = await fetch(`http://localhost:4000/bathrooms/${params.id}/reviews`);
+  // const reviewsResponse = await fetch(`http://localhost:4000/bathrooms/${params.id}/reviews`);
 
+  // const Reviews = await reviewsResponse.json();
+
+  const reviewsResponse = await fetch(`${API_URL}/api/bathroomActions/bathrooms/${params.id}/reviews`);
   const Reviews = await reviewsResponse.json();
+
   const UserResponse = await fetch(`/api/userProfileData/userData`);
   const userData = await UserResponse.json();
   const allUserResponse = await fetch('/api/userProfileData/allUsers');
