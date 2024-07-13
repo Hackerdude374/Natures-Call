@@ -89,6 +89,24 @@ router.get("/bathrooms/:bathroomId", async (req, res) => {
     res.status(500).send({ message: err.message });
   }
 });
+// Get reviews for a specific bathroom by bathroomId
+router.get("/bathrooms/:bathroomId/reviews", async (req, res) => {
+  const bathroomId = parseInt(req.params.bathroomId, 10);
+
+  try {
+    const reviews = await Review.findAll({ where: { BathroomId: bathroomId } });
+
+    if (reviews.length > 0) {
+      res.status(200).json(reviews);
+    } else {
+      res.status(404).send({ message: "No reviews found for this bathroom" });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send({ message: err.message });
+  }
+});
+
  //--------------------------------------------------------------------------
  router.delete("/bathrooms/:bathroomId", authenticateUser,  async (req, res) => {
   const bathroomId = parseInt(req.params.bathroomId, 10);
