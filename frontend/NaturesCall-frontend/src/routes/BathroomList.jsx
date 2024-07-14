@@ -23,7 +23,7 @@ export default function BathroomList() {
     }
     try {
       //const response = await fetch(`${API_URL}/api/userActions/nearby`, {
-       const response = await fetch(`${VITE_API_URL}/api/userActions/nearby`, {
+       const response = await fetch(`${API_URL}/api/userActions/nearby`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
