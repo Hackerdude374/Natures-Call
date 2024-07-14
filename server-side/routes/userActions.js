@@ -3,6 +3,38 @@ const router = express.Router();
 const {User, Bathroom, Review} = require("../models");
 const { authenticateUser } = require("../middleware/auth");
 
+//show nearby bathroom markers.
+const { Op, literal } = require("sequelize");//op contains operators for queries, literal inserts raw sql into sequelize
+app.post("/nearby", async (req, res) => {
+  const userLat = parseFloat(req.body.lat);
+  const userLong = parseFloat(req.body.long);
+  const maxDistance = 5; // this is kilometers
+  try {
+    const userBathrooms = await Bathroom.findAll({
+      where: {
+        lat: {
+          [Op.and]: [
+            literal(`CAST(lat AS NUMERIC) >= ${userLat - 0.009 * maxDistance}`),
+            literal(`CAST(lat AS NUMERIC) <= ${userLat + 0.009 * maxDistance}`),
+          ],
+        },
+        lng: {
+          [Op.and]: [
+            literal(`CAST(lng AS NUMERIC) >= ${userLong - 0.009 * maxDistance}`),
+            literal(`CAST(lng AS NUMERIC) <= ${userLong + 0.009 * maxDistance}`),
+          ],
+        },
+      },
+      order: [
+        Sequelize.literal(`SQRT(POW(CAST(lat AS NUMERIC) - ${userLat}, 2) + POW(CAST(lng AS NUMERIC) - ${userLong}, 2)) ASC`) // Orders by proximity
+      ]
+    });
+    res.status(200).json(userBathrooms);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send({ message: err.message });
+  }
+});
 
 
 
