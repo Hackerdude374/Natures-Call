@@ -262,4 +262,23 @@ res.message("updated");
   }
 });
 
+
+
+//----------------admin delete (no user authentixation)-----------
+router.delete("/adminbathrooms/:bathroomId", async (req, res) => {
+  const bathroomId = parseInt(req.params.bathroomId, 10);
+
+  try {
+    const deleteOp = await Bathroom.destroy({ where: { id: bathroomId } });
+    if (deleteOp > 0) {
+      res.status(200).send({ message: "Bathroom deleted successfully" });
+    } else {
+      res.status(404).send({ message: "Bathroom not found" });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send({ message: err.message });
+  }
+});
+
      module.exports = router;
