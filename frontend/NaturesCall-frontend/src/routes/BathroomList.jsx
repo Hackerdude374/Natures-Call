@@ -22,7 +22,7 @@ export default function BathroomList() {
       long,
     }
     try {
-      const response = await fetch(`$/api/userActions/nearby`, {
+      const response = await fetch(`${API_URL}/api/userActions/nearby`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
