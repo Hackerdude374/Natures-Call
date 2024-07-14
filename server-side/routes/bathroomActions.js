@@ -281,4 +281,4 @@ router.delete("/adminbathrooms/:bathroomId", async (req, res) => {
   }
 });
 
-     module.exports = router;
+module.exports = router;
