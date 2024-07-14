@@ -27,7 +27,7 @@ const API_URL = import.meta.env.BACKEND_AWS_URL || "http://localhost:5173";
 // );
 app.use(
   cors({
-    origin: API_URL,
+    origin:'https://naturescalls.me',
     allowedHeaders: ["Content-Type", "Authorization"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
   })
