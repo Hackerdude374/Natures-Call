@@ -487,6 +487,7 @@ app.get("/bathrooms/:bathroomId/reviews", async (req, res) => {
 
 const { Op, literal } = require("sequelize");//op contains operators for queries, literal inserts raw sql into sequelize
 app.post("/nearby", async (req, res) => {
+  console.log("/nearby called from server.js")
   const userLat = parseFloat(req.body.lat);
   const userLong = parseFloat(req.body.long);
   const maxDistance = 5; // this is kilometers
