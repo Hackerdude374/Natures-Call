@@ -25,7 +25,8 @@ const BathroomActionRouter = require("./routes/bathroomActions");
 // );
 app.use(
   cors({
-    origin: "http://ec2-3-19-215-1.us-east-2.compute.amazonaws.com",
+  //  origin: "http://ec2-3-19-215-1.us-east-2.compute.amazonaws.com",
+    origin:'https://naturescalls.me',
     allowedHeaders: ["Content-Type", "Authorization"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
   })
