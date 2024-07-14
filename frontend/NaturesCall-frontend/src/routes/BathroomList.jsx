@@ -20,10 +20,11 @@ export default function BathroomList() {
     const data = {
       lat,
       long,
-    }
+    };
+    console.log("API_URL:", API_URL); // Log the API_URL
+    console.log("Request data:", data); // Log the request data
     try {
-      //const response = await fetch(`${API_URL}/api/userActions/nearby`, {
-       const response = await fetch(`${API_URL}/api/userActions/nearby`, {
+      const response = await fetch(`${API_URL}/api/userActions/nearby`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,14 +32,16 @@ export default function BathroomList() {
         body: JSON.stringify(data),
       });
 
+      console.log("Response status:", response.status); // Log the response status
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const displayBathrooms = await response.json();
+      console.log("Response data:", displayBathrooms); // Log the response data
       const bathroomCount = displayBathrooms.length;
       setDisplayBathrooms(displayBathrooms);
-      console.log("display br: ", displayBathrooms);
       setBathroomCount(bathroomCount);
 
       return displayBathrooms;
