@@ -15,7 +15,7 @@ const authRouter = require("./routes/auth");
 const ProfileRouter = require("./routes/userProfileData");
 const UserActionRouter = require("./routes/userActions");
 const BathroomActionRouter = require("./routes/bathroomActions");
-const API_URL = import.meta.env.BACKEND_AWS_URL || "http://localhost:5173";
+const API_URL = process.env.BACKEND_AWS_URL || "http://localhost:5173";
 
 //const API_BASE_URL = import.meta.env.VITE_API_URL;
 // app.use(
@@ -27,7 +27,7 @@ const API_URL = import.meta.env.BACKEND_AWS_URL || "http://localhost:5173";
 // );
 app.use(
   cors({
-    origin:'https://naturescalls.me',
+    origin:API_URL,
     allowedHeaders: ["Content-Type", "Authorization"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
   })
