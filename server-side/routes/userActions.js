@@ -4,8 +4,8 @@ const {User, Bathroom, Review} = require("../models");
 const { authenticateUser } = require("../middleware/auth");
 
 //show nearby bathroom markers.
-const { Op, literal } = require("sequelize");//op contains operators for queries, literal inserts raw sql into sequelize
-app.post("/nearby", async (req, res) => {
+const { Op, literal,Sequelize } = require("sequelize");//op contains operators for queries, literal inserts raw sql into sequelize
+router.post("/nearby", async (req, res) => {
   const userLat = parseFloat(req.body.lat);
   const userLong = parseFloat(req.body.long);
   const maxDistance = 5; // this is kilometers
