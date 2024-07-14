@@ -104,48 +104,24 @@ const destiantionRef = useRef()
   
             if (data.results.length > 0) {
               const address = data.results[0].formatted_address;
-              console.log("User's address:", address);
+              console.log("my address:", address);
               setLat(latitude);
               setLong(longitude);
-              setCenter({ lat: latitude, lng: longitude });
-              setAddress(address); // Assuming you have a state variable for address
-              // If you're using refs for origin:
-              // if (originRef.current) originRef.current.value = address;
-            } else {
-              console.log("No results found");
-              handleLocationError("Unable to find address for this location.");
+              //originRef.current.value = address;
+              //console.log("originRef.current.value:", originRef.current.value);
+              
             }
           } catch (error) {
             console.error("Error getting address from coordinates:", error);
-            handleLocationError("Error getting address from coordinates.");
           }
         },
         (error) => {
           console.error("Error getting user's location:", error);
-          handleLocationError(error.message);
-        },
-        { 
-          enableHighAccuracy: true, 
-          timeout: 5000, 
-          maximumAge: 0 
         }
       );
     } else {
       console.error("Geolocation is not supported by this browser.");
-      handleLocationError("Geolocation is not supported by this browser.");
     }
-  };
-  
-  const handleLocationError = (message) => {
-    console.error(message);
-    // Fallback to a default location (e.g., New York City)
-    const defaultLat = 40.7128;
-    const defaultLng = -74.0060;
-    setLat(defaultLat);
-    setLong(defaultLng);
-    setCenter({ lat: defaultLat, lng: defaultLng });
-    setAddress("New York City, NY, USA"); // Set a default address
-    alert(`Unable to get your location: ${message}\nFalling back to default location.`);
   };
   
   //useEffect(getUserLocation,[])
