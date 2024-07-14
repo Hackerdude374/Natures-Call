@@ -23,7 +23,7 @@ export default function BathroomList() {
     }
     try {
       //const response = await fetch(`${API_URL}/api/userActions/nearby`, {
-       const response = await fetch(`http://ec2-3-19-215-1.us-east-2.compute.amazonaws.com/api/userActions/nearby`, {
+       const response = await fetch(`${VITE_API_URL}/api/userActions/nearby`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
