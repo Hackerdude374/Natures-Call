@@ -1,0 +1,106 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+credentials/
+config/secrets.*
+service-account*.json
+firebase-adminsdk*.json
+google-credentials*.json
+aws-exports.js
+
+# AWS / cloud / local deploy files
+.aws/
+.serverless/
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Database dumps / generated data
+*.sql
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.geojson
+*.shp
+*.zip
+
+# Uploaded/user-generated media
+uploads/
+public/uploads/
+storage/
+tmp/
+temp/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git internals
+.git/
+.gitignore
+
+# Package manager caches/locks? 
+# Keep lockfiles if possible for redeploy debugging.
+# Do NOT ignore package-lock.json / pnpm-lock.yaml / yarn.lock.
+
+# Tests snapshots / generated reports
+test-results/
+playwright-report/
+cypress/videos/
+cypress/screenshots/
+
+# Python artifacts, if any
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Docker volumes / local runtime
+.docker/
+docker-data/
